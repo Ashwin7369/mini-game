@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match - Mini Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> GameHub</a>
+            <div class="nav-actions">
+                <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Home</a>
+                <button id="theme-toggle" class="btn-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="game-container">
+            <div class="game-header">
+                <h2>Memory Match</h2>
+                <div class="game-stats">
+                    <span id="moves-display">Moves: 0</span>
+                    <span id="timer-display">Time: 0s</span>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <button id="reset-btn" class="btn-primary">Restart Game</button>
+                </div>
+            </div>
+
+            <div class="memory-board" id="memory-board">
+                <!-- Cards dynamically generated -->
+            </div>
+
+            <div class="leaderboard">
+                <h3>Top Memory Scores</h3>
+                <ul class="leaderboard-list" id="memory-history">
+                    <!-- History goes here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Win Modal (Simple hidden div) -->
+    <div id="win-message" class="hidden" style="text-align: center; font-size: 1.5rem; margin-top: 1rem; color: var(--accent-1); font-weight: 800;">
+        You Won! 🎉
+    </div>
+
+    <script src="script.js"></script>
+    <script src="memory.js"></script>
+</body>
+</html>

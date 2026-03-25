@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Mini Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> GameHub</a>
+            <div class="nav-actions">
+                <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Home</a>
+                <button id="theme-toggle" class="btn-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="game-container">
+            <div class="game-header">
+                <h2>Tic Tac Toe</h2>
+                <div class="game-stats">
+                    <button id="mode-btn" class="btn-primary">Play vs AI</button>
+                    <button id="reset-btn" class="btn-primary">Restart Game</button>
+                </div>
+            </div>
+
+            <div class="ttt-turn" id="turn-display">Player X's Turn</div>
+
+            <div class="ttt-board" id="board">
+                <div class="ttt-cell" data-index="0"></div>
+                <div class="ttt-cell" data-index="1"></div>
+                <div class="ttt-cell" data-index="2"></div>
+                <div class="ttt-cell" data-index="3"></div>
+                <div class="ttt-cell" data-index="4"></div>
+                <div class="ttt-cell" data-index="5"></div>
+                <div class="ttt-cell" data-index="6"></div>
+                <div class="ttt-cell" data-index="7"></div>
+                <div class="ttt-cell" data-index="8"></div>
+            </div>
+
+            <div class="leaderboard">
+                <h3>Recent Match History</h3>
+                <ul class="leaderboard-list" id="ttt-history">
+                    <!-- History goes here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>

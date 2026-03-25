@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo"><i class="fa-solid fa-gamepad"></i> GameHub</h1>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <h2 class="title-gradient">Welcome to the Arcade</h2>
+            <p class="subtitle">Select a mini-game to play and set your high score.</p>
+        </header>
+
+        <section class="game-grid">
+            <!-- Tic Tac Toe Card -->
+            <a href="tic-tac-toe.html" class="game-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-xmarks-lines"></i>
+                </div>
+                <h3>Tic Tac Toe</h3>
+                <p>Classic 3x3 grid game. Play against a friend or simply enjoy the strategy.</p>
+                <div class="card-footer">
+                    <span class="btn-play">Play Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Memory Game Card -->
+            <a href="memory.html" class="game-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-clone"></i>
+                </div>
+                <h3>Memory Match</h3>
+                <p>Test your memory by flipping cards to find the matching pairs.</p>
+                <div class="card-footer">
+                    <span class="btn-play">Play Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- Typing Speed Test Card -->
+            <a href="typing.html" class="game-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-keyboard"></i>
+                </div>
+                <h3>Typing Speed Test</h3>
+                <p>Check how fast you can type. Improve your WPM and accuracy.</p>
+                <div class="card-footer">
+                    <span class="btn-play">Play Now <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

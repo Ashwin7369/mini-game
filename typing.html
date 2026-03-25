@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test - Mini Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> GameHub</a>
+            <div class="nav-actions">
+                <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Home</a>
+                <button id="theme-toggle" class="btn-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="game-container">
+            <div class="game-header">
+                <h2>Typing Speed Test</h2>
+                <div class="game-stats">
+                    <span id="wpm-display">WPM: 0</span>
+                    <span id="accuracy-display">Accuracy: 100%</span>
+                    <span id="timer-display">Time: 0s</span>
+                </div>
+            </div>
+
+            <div class="typing-box">
+                <div class="paragraph-display" id="paragraph-display">
+                    <!-- Text will be injected here -->
+                </div>
+                <input type="text" class="type-input" id="type-input" placeholder="Start typing here..." autocomplete="off">
+            </div>
+            
+            <div class="text-center">
+                <button id="reset-btn" class="btn-primary">New Test</button>
+            </div>
+
+            <!-- Win Modal -->
+            <div id="result-message" class="hidden" style="text-align: center; font-size: 1.5rem; margin-top: 2rem; color: var(--accent-1); font-weight: 800;">
+                Test Complete! 🎉 <br> <span style="font-size: 1rem; color: var(--text-secondary);" id="final-stats"></span>
+            </div>
+
+            <div class="leaderboard">
+                <h3>Top Typing Scores</h3>
+                <ul class="leaderboard-list" id="typing-history">
+                    <!-- History goes here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="typing.js"></script>
+</body>
+</html>
