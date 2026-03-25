@@ -4,7 +4,7 @@ import os
 import sys
 
 # Default port
-PORT = 8000
+PORT = int(os.environ.get("PORT", 8000))
 DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
 class Handler(http.server.SimpleHTTPRequestHandler):
